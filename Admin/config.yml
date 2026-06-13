@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: VOTRE_PSEUDO_GITHUB/balet-corporate # On changera ça bientôt
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "configuration"
+    label: "Modifier le Site"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - file: "content.json"
+        label: "Textes et Contacts"
+        name: "home_content"
+        fields:
+          - { label: "Titre principal Hero", name: "hero_title", widget: "string" }
+          - { label: "Description Hero", name: "hero_subtitle", widget: "text" }
+          - { label: "Numéro WhatsApp (ex: +224...)", name: "whatsapp", widget: "string" }
+          - { label: "Numéro Téléphone Appels", name: "phone", widget: "string" }
+          - { label: "Adresse physique", name: "adresse", widget: "string" }
