@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balet Aluminium & Inox | Menuiserie Métallique Premium en Guinée</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#1e3a8a',    /* Deep Royal Blue du logo */
+                            navy: '#0f172a',    /* Dark Slate / Anthracite */
+                            gray: '#64748b',    /* Muted Metallic Gray */
+                            light: '#f8fafc',   /* Off-white ultra propre */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95));
+        }
+    </style>
+</head>
+<body class="bg-brand-light font-sans text-brand-navy antialiased">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full z-50 glassmorphism border-b border-slate-200/50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo Area (Placeholder textuel stylisé imitant le logo 1000330659.png) -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-12 h-12 rounded-full border-2 border-brand-blue flex items-center justify-center font-heading font-bold text-xl text-brand-blue tracking-tighter group-hover:bg-brand-blue group-hover:text-white transition-all duration-300">
+                    BA
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-heading font-extrabold text-lg tracking-wide text-brand-blue leading-tight">BALET ALUMINIUM & INOX</span>
+                    <span class="text-xs font-semibold tracking-widest text-brand-navy uppercase opacity-80">Fabrication et Vente</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm">
+                <a href="#accueil" class="text-brand-navy hover:text-brand-blue transition-colors">Accueil</a>
+                <a href="#expertise" class="text-brand-navy hover:text-brand-blue transition-colors">Notre Expertise</a>
+                <a href="#services" class="text-brand-navy hover:text-brand-blue transition-colors">Nos Services</a>
+                <a href="#faq" class="text-brand-navy hover:text-brand-blue transition-colors">FAQ</a>
+                <a href="#contact" class="text-brand-navy hover:text-brand-blue transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden lg:block">
+                <a href="https://wa.me/224625713932?text=Bonjour%20Balet%20Aluminium%20%26%20Inox%2C%20je%20souhaite%20obtenir%20un%20devis%20pour%20un%20projet." target="_blank" class="bg-brand-blue hover:bg-brand-navy text-white px-6 h-11 inline-flex items-center rounded-lg font-semibold text-sm shadow-lg shadow-brand-blue/20 transition-all duration-300 hover:-translate-y-0.5">
+                    Demander un Devis
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-btn" class="md:hidden text-brand-navy focus:outline-none text-2xl">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 absolute top-20 left-0 w-full px-6 py-6 space-y-4 shadow-xl">
+            <a href="#accueil" class="block font-medium text-brand-navy mobile-link">Accueil</a>
+            <a href="#expertise" class="block font-medium text-brand-navy mobile-link">Notre Expertise</a>
+            <a href="#services" class="block font-medium text-brand-navy mobile-link">Nos Services</a>
+            <a href="#faq" class="block font-medium text-brand-navy mobile-link">FAQ</a>
+            <a href="#contact" class="block font-medium text-brand-navy mobile-link">Contact</a>
+            <a href="https://wa.me/224625713932" target="_blank" class="block w-full text-center bg-brand-blue text-white py-3 rounded-lg font-semibold">
+                <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Devis
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="accueil" class="relative min-h-screen pt-20 flex items-center bg-cover bg-center text-white overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');">
+        <!-- AI Visual Asset Backup Hint (Midjourney Prompt inside code context for you)
+        [MIDJOURNEY PROMPT]: /imagine prompt: A hyper-realistic, high-end architectural photography of a luxury modern villa facade featuring massive minimalist aluminum sliding glass doors and structure. Cinematic afternoon lighting, reflection on the glass, premium construction, depth of field, 8k resolution, commercial advertising style --ar 16:9 --style raw
+        -->
+        <div class="absolute inset-0 hero-gradient"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-brand-blue/30 border border-brand-blue/40 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-blue-200">
+                    <i class="fa-solid fa-shield-halved text-brand-blue-300"></i> <span>Artisanat Métallique de Haute Précision</span>
+                </div>
+                <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.1]">
+                    L'art de l'aluminium et de l'inox en <span class="text-blue-400">Guinée</span>
+                </h1>
+                <p class="text-lg text-slate-300 font-light max-w-2xl leading-relaxed">
+                    Conception, fabrication sur-mesure et pose de structures haut de gamme : portes, baies vitrées, cuisines modernes et balcons. Une alliance parfaite entre sécurité, robustesse et élégance architecturale.
+                </p>
+                
+                <!-- Trust Badge Direct inside Hero -->
+                <div class="flex items-center space-x-4 bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-sm max-w-md">
+                    <div class="text-4xl font-extrabold text-blue-400 font-heading">10+</div>
+                    <div class="text-sm text-slate-300 leading-snug">
+                        <span class="font-semibold text-white block">Années d'Expertise Technique</span>
+                        Une Direction Générale hautement expérimentée pour garantir des finitions irréprochables.
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
+                    <a href="https://wa.me/224625713932?text=Bonjour%20Balet%20Aluminium%2C%20je%20souhaite%20un%20devis." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-bold text-center shadow-xl shadow-emerald-900/30 transition-all duration-300 flex items-center justify-center space-x-3 group">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Discuter sur WhatsApp</span>
+                    </a>
+                    <a href="#services" class="border border-white/30 hover:border-white bg-white/5 hover:bg-white/10 text-white px-8 py-4 rounded-xl font-bold text-center backdrop-blur-sm transition-all duration-300">
+                        Voir Nos Réalisations
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Elegant Bottom Curve Decorative -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+            <svg class="relative block w-full h-[60px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" preserveAspectRatio="none">
+                <path d="M0,0V60H1200V0C1043.33,38.33,830,57.5,560,57.5S156.67,38.33,0,0Z" class="fill-brand-light"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- SECTION NOTRE EXPERTISE (ABOUT) -->
+    <section id="expertise" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            
+            <!-- Graphic Block left -->
+            <div class="lg:col-span-5 relative">
+                <!-- Image Placeholder representation for high-end feel -->
+                <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative group bg-slate-800">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Atelier de fabrication" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700">
+                    <!-- [MIDJOURNEY PROMPT]: /imagine prompt: Close up of a professional welder working on a sleek stainless steel structure, bright blue sparks, clean warehouse environment, professional industrial photography, cinematic lighting, sharp focus --ar 4:5 -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-transparent"></div>
+                    <div class="absolute bottom-8 left-8 right-8 text-white">
+                        <span class="text-xs uppercase font-bold tracking-widest text-blue-400 block mb-1">Qualité Sans Compromis</span>
+                        <h4 class="font-heading font-bold text-xl">L'exigence du détail, du profilé brut jusqu'à l'ajustement final chez vous.</h4>
+                    </div>
+                </div>
+                <!-- Decorative absolute element -->
+                <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-brand-blue/10 rounded-3xl -z-10"></div>
+            </div>
+
+            <!-- Content Block right -->
+            <div class="lg:col-span-7 space-y-8">
+                <div class="space-y-3">
+                    <span class="text-sm font-bold tracking-widest text-brand-blue uppercase block">Qui sommes-nous ?</span>
+                    <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-brand-navy">
+                        La fusion du savoir-faire décennal et de l'innovation métallique
+                    </h2>
+                </div>
+                <p class="text-brand-gray text-lg leading-relaxed font-light">
+                    Lancée fin 2025 à Conakry, <strong>Balet Aluminium & Inox</strong> s’impose déjà comme la référence de confiance pour les projets architecturaux exigeants en Guinée. Portée par un Directeur Général doté de près de <strong>10 ans d’expérience pratique reconnue</strong> dans le secteur, notre structure maîtrise les techniques de pointe indispensables pour façonner les matériaux modernes.
+                </p>
+                
+                <!-- Core Values Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center shrink-0 text-xl">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-semibold text-brand-navy text-base">Matériaux Certifiés</h4>
+                            <p class="text-sm text-brand-gray mt-1">Aluminium haute densité et acier inoxydable premium résistants à la corrosion tropicale.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center shrink-0 text-xl">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-semibold text-brand-navy text-base">Mesures & Sur-Mesure</h4>
+                            <p class="text-sm text-brand-gray mt-1">Chaque projet est unique. Nous étudions méticuleusement vos plans pour une intégration parfaite.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr class="border-slate-200">
+                
+                <!-- Call Direct Action inside content -->
+                <div class="flex items-center space-x-4">
+                    <i class="fa-solid fa-phone text-2xl text-brand-blue animate-pulse"></i>
+                    <div>
+                        <span class="text-xs font-semibold text-brand-gray uppercase block tracking-wider">Ligne Directe Bureau</span>
+                        <a href="tel:+224627487902" class="text-xl font-heading font-bold text-brand-navy hover:text-brand-blue transition-colors">+224 627 48 79 02</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION SERVICES / CATALOGUE VISUEL -->
+    <section id="services" class="bg-slate-900 text-white py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-20">
+                <span class="text-sm font-bold tracking-widest text-blue-400 uppercase block">Nos Domaines d'Intervention</span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-5xl">Des ouvrages de prestige pour valoriser vos espaces</h2>
+                <p class="text-slate-400 font-light">Découvrez notre gamme de solutions architecturales robustes et élégantes, façonnées pour durer.</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Portes & Fenêtres -->
+                <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl overflow-hidden group hover:border-blue-500/50 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 overflow-hidden relative bg-slate-700">
+                            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80" alt="Portes et Fenêtres Aluminium" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <!-- [MIDJOURNEY PROMPT]: /imagine prompt: Architectural shot of premium dark grey powder coated aluminum sliding window frames in a luxury bright living room, modern design, cinematic daylight --ar 4:3 -->
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="font-heading font-bold text-xl group-hover:text-blue-400 transition-colors">Portes & Fenêtres</h3>
+                            <p class="text-sm text-slate-400 font-light leading-relaxed">
+                                Baies vitrées coulissantes, châssis fixes, portes d'entrée sécurisées et fenêtres oscillo-battantes. Isolation thermique, étanchéité maximale et clarté optimale pour vos intérieurs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/224625713932?text=Je%20souhaite%20des%20infos%20sur%20les%20Portes%20et%20Fen%C3%AAtres" target="_blank" class="text-xs font-bold text-blue-400 tracking-wider uppercase inline-flex items-center group-hover:translate-x-1 transition-transform">
+                            En savoir plus <i class="fa-solid fa-arrow-right ml-2 text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Balcons & Garde-corps -->
+                <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl overflow-hidden group hover:border-blue-500/50 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 overflow-hidden relative bg-slate-700">
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Garde-corps Inox" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <!-- [MIDJOURNEY PROMPT]: /imagine prompt: High-end luxury house balcony featuring polished stainless steel and heavy clear glass balustrade railing structure, sunny daylight, sea background view, commercial advertising photography --ar 4:3 -->
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="font-heading font-bold text-xl group-hover:text-blue-400 transition-colors">Balcons & Garde-corps</h3>
+                            <p class="text-sm text-slate-400 font-light leading-relaxed">
+                                Structures de protection élégantes en acier inoxydable (Inox) pur, combinées ou non avec du verre sécurit. Idéal pour sécuriser terrasses, mezzanines et cages d'escalier avec style.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/224625713932?text=Je%20souhaite%20des%20infos%20sur%20les%20Balcons%20et%20Garde-corps" target="_blank" class="text-xs font-bold text-blue-400 tracking-wider uppercase inline-flex items-center group-hover:translate-x-1 transition-transform">
+                            En savoir plus <i class="fa-solid fa-arrow-right ml-2 text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Cuisines Modernes -->
+                <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl overflow-hidden group hover:border-blue-500/50 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 overflow-hidden relative bg-slate-700">
+                            <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=600&q=80" alt="Cuisines en Aluminium" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <!-- [MIDJOURNEY PROMPT]: /imagine prompt: Ultra-modern contemporary luxury kitchen designed with high-end dark brushed aluminum cabinet doors and state of the art stainless steel countertops, clean architecture interior style --ar 4:3 -->
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="font-heading font-bold text-xl group-hover:text-blue-400 transition-colors">Cuisines Modernes</h3>
+                            <p class="text-sm text-slate-400 font-light leading-relaxed">
+                                Conception de placards et d'aménagements complets de cuisine en structures d'aluminium composite. Solution moderne, imputrescible, facile à nettoyer et hautement durable face à l'humidité.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/224625713932?text=Je%20souhaite%20des%20infos%20sur%20les%20Cuisines%20Modernes" target="_blank" class="text-xs font-bold text-blue-400 tracking-wider uppercase inline-flex items-center group-hover:translate-x-1 transition-transform">
+                            En savoir plus <i class="fa-solid fa-arrow-right ml-2 text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Custom CTA below grid -->
+            <div class="mt-16 bg-gradient-to-r from-brand-blue to-slate-800 rounded-2xl p-8 md:p-12 text-center md:text-left md:flex items-center justify-between border border-blue-500/20">
+                <div class="space-y-2 mb-6 md:mb-0">
+                    <h3 class="font-heading font-bold text-2xl">Un projet spécifique ou un design sur-mesure ?</h3>
+                    <p class="text-slate-300 max-w-xl font-light text-sm">Nos techniciens se déplacent partout à Conakry et en région pour évaluer vos chantiers et dessiner vos futures structures.</p>
+                </div>
+                <a href="https://wa.me/224625713932?text=Bonjour%20j'ai%20un%20projet%20sur%20mesure%20à%20vous%20soumettre." target="_blank" class="bg-white hover:bg-slate-100 text-brand-navy px-8 py-4 rounded-xl font-bold inline-flex items-center justify-center space-x-2 transition-all shadow-xl">
+                    <i class="fa-brands fa-whatsapp text-emerald-600 text-lg"></i>
+                    <span>Envoyer mon Plan / Croquis</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ SECTION Accordion Premium -->
+    <section id="faq" class="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center space-y-3 mb-16">
+            <span class="text-sm font-bold tracking-widest text-brand-blue uppercase block">Des Réponses Claires</span>
+            <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-brand-navy">Questions Fréquentes</h2>
+        </div>
+
+        <div class="space-y-4">
+            <!-- Accordion Item 1 -->
+            <div class="bg-white border border-slate-200 rounded-xl overflow-hidden transition-all duration-300">
+                <button class="faq-btn w-full px-6 py-5 text-left font-heading font-bold text-brand-navy flex items-center justify-between focus:outline-none hover:bg-slate-50">
+                    <span>Quels sont les délais habituels de fabrication et de livraison ?</span>
+                    <i class="fa-solid fa-chevron-down transition-transform duration-300 text-sm text-brand-gray"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-5 text-sm text-brand-gray leading-relaxed border-t border-slate-100/50 pt-3">
+                    Nos délais varient généralement entre 5 et 15 jours ouvrés selon l'envergure du projet et la complexité des découpes/assemblages. Un calendrier précis vous est fourni dès la validation du devis initial.
+                </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="bg-white border border-slate-200 rounded-xl overflow-hidden transition-all duration-300">
+                <button class="faq-btn w-full px-6 py-5 text-left font-heading font-bold text-brand-navy flex items-center justify-between focus:outline-none hover:bg-slate-50">
+                    <span>Pourquoi privilégier l'Aluminium pour les placards de cuisine ?</span>
+                    <i class="fa-solid fa-chevron-down transition-transform duration-300 text-sm text-brand-gray"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-5 text-sm text-brand-gray leading-relaxed border-t border-slate-100/50 pt-3">
+                    Contrairement au bois traditionnel qui gonfle ou s'effrite avec l'humidité locale, l'aluminium composite est totalement inaltérable, résistant aux nuisibles (termites) et extrêmement hygiénique pour le stockage de la nourriture.
+                </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="bg-white border border-slate-200 rounded-xl overflow-hidden transition-all duration-300">
+                <button class="faq-btn w-full px-6 py-5 text-left font-heading font-bold text-brand-navy flex items-center justify-between focus:outline-none hover:bg-slate-50">
+                    <span>Proposez-vous le déplacement pour la prise de mesures ?</span>
+                    <i class="fa-solid fa-chevron-down transition-transform duration-300 text-sm text-brand-gray"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-5 text-sm text-brand-gray leading-relaxed border-t border-slate-100/50 pt-3">
+                    Oui, tout à fait. Nos experts techniques se déplacent directement sur votre chantier partout à Conakry pour relever les dimensions au millimètre près, garantissant ainsi un ajustement parfait lors de l'installation.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT, INFOS & GEOLOCALISATION -->
+    <section id="contact" class="bg-white border-t border-slate-200 py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-16">
+            
+            <!-- Contact details Column (5/12) -->
+            <div class="lg:col-span-5 space-y-8">
+                <div class="space-y-3">
+                    <span class="text-sm font-bold tracking-widest text-brand-blue uppercase block">Discutons de votre projet</span>
+                    <h2 class="font-heading font-extrabold text-3xl text-brand-navy">Coordonnées de l'Atelier</h2>
+                    <p class="text-brand-gray text-sm font-light">Venez nous rencontrer ou transmettez-nous vos demandes d’informations en ligne.</p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Address Link -->
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-slate-100 text-brand-blue flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-semibold text-sm text-brand-navy">Notre Adresse</h4>
+                            <p class="text-sm text-brand-gray mt-0.5">Sonfonia casse, à côté de l'école Phoenix</p>
+                            <p class="text-xs text-brand-blue font-semibold mt-1 uppercase tracking-wider">Conakry, Guinée</p>
+                        </div>
+                    </div>
+
+                    <!-- Phones Link -->
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-slate-100 text-brand-blue flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-semibold text-sm text-brand-navy">Téléphones & Urgences</h4>
+                            <p class="text-sm text-brand-gray mt-0.5">Appels : <a href="tel:+224627487902" class="hover:underline font-medium text-brand-navy">+224 627 48 79 02</a></p>
+                            <p class="text-sm text-brand-gray">WhatsApp : <a href="https://wa.me/224625713932" class="hover:underline font-medium text-brand-navy">+224 625 71 39 32</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Email Link -->
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-slate-100 text-brand-blue flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-semibold text-sm text-brand-navy">Courriel Électronique</h4>
+                            <a href="mailto:amadou4884@gmail.com" class="text-sm text-brand-gray hover:text-brand-blue transition-colors block mt-0.5">amadou4884@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-slate-200">
+
+                <!-- Facebook Integration placeholder block (requested in prompt) -->
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 space-y-3">
+                    <span class="text-xs font-bold text-brand-gray tracking-wider uppercase block"><i class="fa-brands fa-facebook-f mr-1 text-blue-600"></i> Suivez nos chantiers en direct</span>
+                    <p class="text-xs text-brand-gray font-light">Rejoignez notre communauté sur Facebook pour découvrir nos dernières vidéos de pose et l'avis de nos clients satisfaits.</p>
+                    <a href="#" class="inline-flex items-center text-xs font-bold text-brand-blue hover:underline">Voir la page Facebook <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></a>
+                </div>
+            </div>
+
+            <!-- Google Maps Area (7/12) -->
+            <div class="lg:col-span-7 h-[450px] lg:h-full min-h-[350px] rounded-3xl overflow-hidden shadow-xl border border-slate-200 relative bg-slate-100">
+                <!-- Google Maps Embed using exact coordinates provided -->
+                <iframe 
+                    src="https://maps.google.com/maps?q=9.677212,-13.555736&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                    class="w-full h-full border-0 absolute inset-0" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PREMIUM COMPACT FOOTER -->
+    <footer class="bg-brand-navy text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 text-sm">
+            
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full border border-slate-700 flex items-center justify-center font-heading font-bold text-xs text-white">
+                    BA
+                </div>
+                <span class="font-heading font-bold text-white tracking-wider text-xs uppercase">© 2026 BALET ALUMINIUM & INOX. Tous droits réservés.</span>
+            </div>
+
+            <div class="flex space-x-6 text-xs font-light">
+                <span class="text-slate-500">Localisation : Sonfonia, Conakry, Guinée</span>
+                <a href="#accueil" class="hover:text-white transition-colors">Retour en haut</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- STICKY FLOATING WHATSAPP BUTTON (Always available for Conversions) -->
+    <a href="https://wa.me/224625713932?text=Bonjour%20Balet%20Aluminium%20%26%20Inox%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20vos%20tarifs." target="_blank" class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl z-50 transition-all duration-300 hover:scale-110 active:scale-95 group" aria-label="Contactez-nous sur WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <!-- Subtle text hint on hover desktop -->
+        <span class="absolute right-16 bg-slate-900 text-white text-xs font-medium py-1 px-3 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl">Besoin d'un devis ?</span>
+    </a>
+
+    <!-- JAVASCRIPT ANIMATIONS & INTERACTIONS -->
+    <script>
+        // Header blur effect transition on Scroll
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-lg', 'bg-white/95');
+                header.classList.remove('bg-white/85');
+            } else {
+                header.classList.remove('shadow-lg', 'bg-white/95');
+                header.classList.add('bg-white/85');
+            }
+        });
+
+        // Mobile Menu toggler logic
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Premium FAQ Accordion Logic
+        const faqButtons = document.querySelectorAll('.faq-btn');
+
+        faqButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                
+                // Toggle current accordion panel visibility
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+                
+                // Style adjustment for active item
+                btn.parentElement.classList.toggle('border-brand-blue');
+            });
+        });
+    </script>
+</body>
+</html>
