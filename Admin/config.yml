@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: VOTRE_PSEUDO_GITHUB/balet-corporate # On changera ça bientôt
+  repo: Ervons224/balet-corporate # On changera ça bientôt
   branch: main
 
 media_folder: "images/uploads"
